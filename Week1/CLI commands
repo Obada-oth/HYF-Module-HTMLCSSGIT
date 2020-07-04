@@ -1,0 +1,38 @@
+1-commands needed to create and show a hidden file using CLI:
+
+hackyourfuture@hackyourfutures-MacBook-Air week1 % touch .hidden-file
+hackyourfuture@hackyourfutures-MacBook-Air week1 % ls -a
+.			..			.hidden-file		commands.txt		commands.txt.save
+hackyourfuture@hackyourfutures-MacBook-Air week1 %
+
+2-Commands needed to create multiple nested directories:
+
+hackyourfuture@hackyourfutures-MacBook-Air week1 % mkdir -p ~/desktop/hyf-html-exercises/week1/multiple/nested/directories 
+hackyourfuture@hackyourfutures-MacBook-Air week1 % ls            
+commands.txt		commands.txt.save	multiple
+hackyourfuture@hackyourfutures-MacBook-Air week1 %  
+
+
+
+
+3- Commands needed to append 2 messages to a file without new line character:
+
+
+hackyourfuture@hackyourfutures-MacBook-Air week1 % echo "message1 
+dquote> message2" >> commands.txt
+hackyourfuture@hackyourfutures-MacBook-Air week1 %
+
+ 
+ OR:
+
+
+hackyourfuture@hackyourfutures-MacBook-Air week1 % {echo "message3"; echo "message4";} >> commands.txt
+ 
+
+
+
+message1
+message2
+
+message3
+message4
