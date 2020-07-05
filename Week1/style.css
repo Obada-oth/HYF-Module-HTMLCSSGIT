@@ -1,0 +1,236 @@
+.container {
+    max-width: 60%;
+    margin: 0 auto;
+display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header  header header"
+     "aside section1 section1"
+     "aside section2 section2"
+     "footer  footer footer";
+     
+     
+     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+     
+     
+     
+}
+
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;;
+}
+
+.title {
+    text-align: center;
+text-decoration: underline;
+text-decoration-color: rgba(40, 63, 199,0.7);
+}
+.title2 {
+    text-decoration:underline;
+    text-decoration-color: rgba(98, 21, 7,0.7);
+}
+
+
+
+header {
+    grid-area: header;
+    
+    
+    
+    text-align: center;
+   
+    border-top: 40px solid #98cdfc;
+    border-bottom: 2px sloid grey;
+
+    
+}
+aside {grid-area: aside;
+    
+    
+   
+    border-right: 2px solid grey ;
+    
+}
+#work {
+    grid-area: section1;
+    
+    padding: 5px;
+    
+    
+}
+#edu {
+    grid-area: section2;
+    
+    padding: 5px;
+    
+}
+footer {
+    grid-area: footer;
+   
+    padding: 5px;
+    background-color:#98cdfc;
+    height: 40px; 
+}
+img {
+    
+    display:block;
+    border-radius:10%;
+    width:80%;
+   
+}
+#floated{
+    float:left;
+    
+    margin:10px;
+   
+    
+    
+   
+    
+}
+#personal {
+    padding:10px;
+    border-bottom: 2px solid grey;
+}
+ul {list-style: none;}
+aside ul li {
+    padding: 20px 30px;
+}
+
+.section1 ul li {
+    background: url("icons8-university-40.png") no-repeat left center;
+    padding-left: 60px;
+    
+}
+.section2 ul li{
+    background: url(icons8-new-job-40.png) no-repeat left center;
+    padding-left: 60px;
+
+}
+#email {
+    background: url(icons8-new-post-40.png) no-repeat left center;
+    padding-left: 60px;
+}
+#phone {
+    background: url(icons8-cell-phone-40.png) no-repeat left center;
+    padding-left: 60px;
+}
+#address {
+    background: url(icons8-address-40.png) no-repeat left center;
+    padding-left: 60px;
+}
+.top {
+    margin-top: 8em;
+}
+.bottom {
+    margin-top:15em;
+}
+    
+    
+
+
+.skills li {
+    list-style: none;
+    margin: 20px auto;
+    width: 250px; 
+    
+}
+.bar {
+    display: block;
+    background-color: grey;
+    height: 2px; 
+    border: 1px solid rgba(0 0 0 0.3);
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgb(7, 7, 90);
+    overflow: hidden;
+}
+.bar span {
+    height: 2px;
+    background:#98cdfc;
+    float: left;
+}
+.business {
+    width:80%;
+    animation: business 3s;
+    
+}
+.economics {
+    width: 85%;
+    animation: economics 3s;
+}
+.accounting {
+    width:80%;
+    animation: accounting 3s;
+}
+.sales {
+    width:70%;
+    animation: sales 3s;
+}
+.html {
+    width:30%;
+    animation: html 3s;
+}
+.css {
+    width:30%;
+    animation: css 3s;
+}
+.git {
+    width:20%;
+    animation: git 3s;
+}
+@keyframes business {
+    0%{width:0%;
+    }
+    100% {width:80%;
+    }
+}
+@keyframes economics {
+    0%{width:0%;
+    }
+    100% {width:85%;
+    }
+}
+@keyframes accounting {
+    0%{width:0%;
+    }
+    100% {width:80%;
+    }
+}
+@keyframes sales {
+    0%{width:0%;
+    }
+    100% {width:70%;
+    }
+}
+@keyframes html {
+    0%{width:0%;
+    }
+    100% {width:30%;
+    }
+}
+@keyframes css {
+    0%{width:0%;
+    }
+    100% {width:30%;
+    }
+}
+@keyframes git {
+    0%{width:0%;
+    }
+    100% {widows: 20px;%;
+    }
+}
+
+.icons-holder {
+    text-align: center;
+}
+.icon {
+    display: inline-block;
+    margin: auto;
+    opacity:0.5;
+}
+.icon:hover{
+    opacity: 1;
+}
