@@ -3,3 +3,24 @@
     padding:0;
     box-sizing: border-box;
 }
+header {
+    background-image: url(/Users/hackyourfuture/Desktop/hyf-html-exercises/HYF-Module-HTMLCSSGIT/week3/goodreads-clone/newsletter-header.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 500px;
+    background-repeat: no-repeat;
+}
+nav {
+    display:flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    flex-wrap: nowrap;
+}
+.login {
+    display:inline-block;
+    padding: 10px;
+    
+}
+.logo {
+    padding:10px;
+}
