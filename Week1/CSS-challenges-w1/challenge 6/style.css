@@ -1,0 +1,52 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html {
+    height: 100%;
+    font-family:'Architects Daughter', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    color:black;
+    
+    
+   
+}
+.posttitle {
+    font-size: 2rem;
+    text-decoration: underline;
+    background-color: #74d6e3;
+    border-radius: 5px;
+}
+.dateheader {
+    font-size: 0.8rem;
+    background-color: #e5df50;
+    border-radius: 5px;
+}
+
+#wrap {
+    
+   width: 50%;
+   background-image: url(maxresdefault.jpg);
+   background-size: cover;
+   background-position: bottom;
+   overflow: auto;
+    
+}
+.thepost {
+    width: 50%;
+    padding: 15px;
+}
+.main-txt {
+    border: 8px double white;
+    padding: 5px;
+}
+.postfooter {
+    background-color: #e5df50;
+    border-radius: 5px;
+}
+

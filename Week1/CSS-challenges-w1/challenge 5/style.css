@@ -1,0 +1,41 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+blockquote p{
+    position:absolute;
+    left: 45%;
+    top:10%;
+    font-size: 1.9rem;
+}
+#logo {
+    padding-left: 70px;
+}
+#logo h1 {
+    color:transparent;
+}
+#content {
+    width: 90%;
+    margin: 0 auto;
+}
+#content-side {
+    float: left;
+    margin-top: 10px;
+    width: 30%;
+    height: 400px;
+}
+#content-main {
+    margin-top: 50px;
+}
+a {
+    text-decoration: none;
+    color: rgb(142, 126, 8);
+}
+p {
+    font-size: 1.2rem;
+}
+#content-side  a {
+    font-size: 1.4rem;
+}
