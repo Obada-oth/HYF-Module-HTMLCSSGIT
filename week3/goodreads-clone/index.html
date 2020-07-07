@@ -16,25 +16,100 @@
                     <img src="logo.png" alt="goodreads logo">
                 </a>
             </div>
-            <div class="login-container">
-                <div class="login">
-                    <input type="text" placeholder="Email address" name="e-mail">
-                    <br>
-                    <input type="checkbox" name="remember-me">
+            <div class="social-signin">
+                <h2> 
+                    Sign in using:
+                </h2>
+                <ul class="social-signin-icons">
+                    <li>
+                        <a href="#">
+                            <img class="icon" src="share_facebook_circle-ecf94fc18c887e845025d979d27f758d.svg" alt="facebook icon">
+                        </a>
 
-                    <label for="remember-me">Remember me</label>
-                </div>
-                <div class="login">
-                    <input type="text" placeholder="Password" name="psw">
-                    <br>
-                    <a href="#">Forgot it?</a>
-                </div>
-                <div class="login">
-                    <button type="submit">Sign in</button>
-                    <br>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="icon" src="share_twitter_circle-1e3cc199af6bf2bd798502acf873657a.svg" alt="twitter icon">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="icon"  src="google_circle-694153be668f0720f058e755b6f136c6.png" alt="google icon">
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img class="icon" src="amazon_circle-5596868f0d928f2945f3374b01f5e10b.png" alt="amazon icon">
+                        </a>
+
+                    </li>
+                    
         
-                </div>
+                </ul>
+                
             </div>
+        
+            <div class="signin-divider">
+            <h1 >OR:</h1>
+            </div>
+
+            <ul class="signin-signup-triggers">
+
+                <li id="signin">
+                    <div class="signin-trigger">
+                        <a href="#">Sign in</a>
+                    </div>
+
+                    <form>
+                        <div>
+                            <input class="input" type="text" placeholder="Email address" name="e-mail">
+                            
+                            <div>
+                            <input type="checkbox" name="remember-me" class="checkbox">
+                            <label for="remember-me" class="btn-txt">Remember me</label>
+                            </div>
+                        </div>
+                        <div>
+
+                            <input class="input" type="text" placeholder="Password" name="psw">
+                            
+                            <a href="#" class="btn-txt">Forgot it?</a>
+                        </div>
+                        <div>
+
+                            <button class="signin-trigger" type="submit" class="signin-btn">Sign in</button>
+                        </div>
+                    </form>
+
+
+                </li>
+                <li id="signup">
+                    <div class="signup-trigger">
+                        <a href="#">Sign up</a>
+                    </div>
+                    <form>
+                        <form>
+                            <div>
+                                <input class="input" type="text" placeholder="Name" name="uname" required>
+                            </div>
+                            <div>
+                                <input class="input" type="text" placeholder="Email address" name="email" required>
+                            </div>
+                            <div>
+                                <input class="input" type="password" placeholder="Password" name="psw" required>
+                            </div>
+                            <div>
+                                <button class="signup-trigger" type="submit" class="signup-btn"> Sign up </button>
+                            </div>
+
+                        </form>
+
+                </li>
+            </ul>
+
+
         </nav>
 
     </header>
