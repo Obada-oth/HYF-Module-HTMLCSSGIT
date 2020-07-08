@@ -4,36 +4,69 @@
     box-sizing: border-box;
 }
 html,body {
-    height: 100%;
+   
     margin:auto;
     font-family: "Lato", "Helvetica Neue", "Helvetica", sans-serif;
     font-size: 12px;
 
 }
-header {
-    background-image: url(/Users/hackyourfuture/Desktop/hyf-html-exercises/HYF-Module-HTMLCSSGIT/week3/goodreads-clone/newsletter-header.jpg);
-    background-color: #f6f6ee;
-    background-size: 100%;
-    background-position: center bottom;
-    height: 400px;
-    background-repeat: no-repeat;
+img {
+    width: 100%;;
+    height: auto;
 }
-nav {
-    display:flex;
+
+.container {
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+}
+.read-books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+header {
+    
+    background-image: url(/Users/hackyourfuture/Desktop/hyf-html-exercises/HYF-Module-HTMLCSSGIT/week3/goodreads-clone/newsletter-header.jpg);
+    background-color: #f6f6ee;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: contain;
+    height: 400px;
+    
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    
+    
+}
+.header-img {
+    width: 70vw;
+    
+    display: block;
+    margin: 30px auto;
+}
+
+
+nav {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
     
 }
 .signin-signup-triggers {
     display: flex;
+    justify-content: center;
 }
 .social-signin {
     display:flex;
+    justify-content: space-evenly;
     background-color: rgb(26, 25, 25);
     height: 35px;
     color: white;
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     text-align: center;
     padding:5px;
     border: 1px solid rgba(40, 40, 41, 0.2);
@@ -42,30 +75,38 @@ nav {
 }
 .social-signin-icons {
     display: flex;
+    justify-content: center;
     
 }
 .icon {
     width: 20px;
     height:20px;
-    margin:5px;
+    margin: 0 2px;
+    
+    
 }
 .social-signin h2 {
+
    
     text-align: center;
-}
-.signin-divider {
-    width: 100%;
-    text-align: center;
-    margin: 10px auto;
+    font-size: 2vw;
+    padding-top: 2px;
 }
 
-.logo {
-    margin: 20px;
-    padding: 20px;
-}
 
- 
-nav ul {
+.logo{
+    margin: 10px;
+    padding: 10px;
+   
+    
+}
+.social-signin {
+    margin: 10px;
+    padding: 10px;
+   
+
+}
+ul {
     list-style: none;
 }
 li form {
@@ -99,7 +140,7 @@ li:hover form {
     order: 1px solid #382110;
     border-radius: 5px;    
     margin: 20px;
-    padding: 20px 40px;
+    padding: 20px 15px;
     text-align: center;
     color:white;
         
@@ -123,14 +164,14 @@ a {
     border: 1px solid #fad05e;
     border-radius: 5px;
     margin: 20px;
-    padding: 20px 40px;
+    padding: 20px 15px;
     
 }
 .signup-trigger a {
     text-decoration: none;
     color:white;
 }
-nav form {
+.signin-signup-triggers form {
     border: 1px solid gray;
     border-radius: 5px;
     padding: 10px;
@@ -144,5 +185,123 @@ form div {
 form input {
     border-radius: 5px;
 }
+main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+}
+.discover {
+    
+    margin: 20px auto 0px;
+    background: linear-gradient(to bottom,#f4f2e9 80%,#cccab4 20%);
+    padding: 10px;
+    box-shadow: 10px 2px 20px grey;
+    border-radius: 5px;
+    
+    
+    
+    
+}
+.discover h2 {
+    margin-top: 20px;
+    border-bottom: 1px solid gray;
+}
+.discover-books {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+   
+   
+   
+}
+.arrow {
+    margin: auto;
+}
+.discover a{
+    margin-right: 8px;
+}
+.discover-txt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    width:90%;
+    font-size: 2.5vw;
+    margin-top: 30px;
+}
+aside {
+    width: 100%;
+    margin: 20px auto 0px;
+}
+.news {
+    width: 95%;
+    margin: auto;
+    border: 1px solid #f4f2e9;
+    border-radius: 5px;
+    padding:10px;
+    
+    box-shadow: 10px 2px 20px grey;
+    
+   
+}
+.news h2 { 
+    color: #382110;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   
+}
+.news h3 {
+    color: #00635d;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.search h2 {
+    margin: 20px;
+}
+.search-bar {
+    margin: 20px;
+   
+}
+
+.search-bar img {
+    width: 20px;
+    left: -9%;
+    top: 6px;
+    
+    position: relative;
+
+}
+.search-here {
+    width: 90%;
+    padding: 10px;
+    display: inline-block;
+    border: 2px solid #ccc;
+    outline: none;
+   
+   
+}
+.genre-columns {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 25px;
+}
+.genres {
+    display: flex;
+    flex-direction: column;
+   
+}
+.genres a {
+    color:#00635d;
+}
+
+
+
+
     
 
