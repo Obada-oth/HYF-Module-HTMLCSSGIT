@@ -37,12 +37,10 @@ img {
 .header-bkg {
     
     background-image: url(HomepageMasthead_Desktop_p2.png);
-    /* background-color: #f6f6ee; */
+    
     background-repeat: no-repeat;
     background-position: center top;
     background-size: contain ;
-    /* height: px; */
-    
     margin-bottom: 5px;
     margin-top: 5px;
     
@@ -56,12 +54,12 @@ img {
 .signin-signup-header {
     height: 100px;
     display: block;
+    
     position: relative;
-    /* margin-top: 25%; */
+    
     width: 40%;
     margin: 25% auto 0;
-    /* flex-direction: column; */
-    /* align-content: flex-start; */
+    
 }
 header {
     width: 100%;
@@ -116,6 +114,8 @@ nav ul {
     width: 20vw;
     
 }
+
+
 .social-signin-icons {
     display: flex;
     justify-content: center;
